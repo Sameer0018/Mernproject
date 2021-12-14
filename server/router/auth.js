@@ -12,7 +12,7 @@ require('../db/conn');
 const User = require('../models/userschema');
 
 router.get('/api', (req , res) =>{
- res.send(`Hello from the  Home auth.js`);
+ res.send(`hello world from the server router.js`);
 
 } );
 
