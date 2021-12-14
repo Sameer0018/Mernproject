@@ -11,7 +11,7 @@ require('../db/conn');
 
 const User = require('../models/userschema');
 
-router.get('/', (req , res) =>{
+router.get('/api', (req , res) =>{
  res.send(`Hello from the  Home auth.js`);
 
 } );
