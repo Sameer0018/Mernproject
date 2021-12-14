@@ -5,7 +5,8 @@ axios.defaults.withCredentials = true
 
 const instance = axios.create({
   
-    baseURL: "https://wastebanktest.herokuapp.com",
+    baseURL: "https://mernprojectdev.herokuapp.com",
+
 })
 
 export default instance
