@@ -32,31 +32,32 @@ next();
 
 
 
-app.get('/', (req , res) =>{
- res.send(`Hello from the  Home app.js`);
+// app.get('/', (req , res) =>{
+//  res.send(`Hello from the  Home app.js`);
 
-} );
+// } );
 //middle ware is define
 
-app.get('/about',middleware, (req , res) =>{
-    console.log(` Hello my About  `); 
-    res.send(`Hello from the  about from the server`);
+// app.get('/about',middleware, (req , res) =>{
+//     console.log(` Hello my About  `); 
+//     res.send(`Hello from the  about from the server`);
    
-   } );
-   app.get('/contact', (req , res) =>{
-    res.send(`Hello from the contact`);
+//    } );
+//    app.get('/contact', (req , res) =>{
+//     res.send(`Hello from the contact`);
    
-   } );
+//    } );
 
-   
-app.get('/signin', (req , res) =>{
-    res.send(`Hello from the signin`);
-   
-   } );
    app.get('/signup', (req , res) =>{
     res.send(`Hello from the signup`);
    
    } );
+
+app.get('/signin', (req , res) =>{
+    res.send(`Hello from the signin`);
+   
+   } );
+   
 
    if (process.env.NODE_ENV == "production") {
 
